@@ -56,9 +56,13 @@ class ThirdScreenActivity : AppCompatActivity(), (DataItem) -> Unit {
         val editor = sharedPreferences.edit()
         editor.putString("SELECTED_USER_NAME", "${user.firstName} ${user.lastName}")
         editor.apply()
-        setResult(Activity.RESULT_OK)
+
+        val resultIntent = Intent()
+        setResult(Activity.RESULT_OK, resultIntent)
         finish()
     }
+
+
 
 
     private fun setRecyclerViewScrollListener() {

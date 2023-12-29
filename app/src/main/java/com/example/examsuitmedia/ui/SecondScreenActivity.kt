@@ -38,14 +38,15 @@ class SecondScreenActivity : AppCompatActivity() {
         binding.btnSelectedUser.setOnClickListener {
             val intent = Intent(this@SecondScreenActivity, ThirdScreenActivity::class.java)
             intent.putExtra(USER_NAME, showName)
-            startActivityForResult(intent, REQUEST_SELECT_USER)
+            startActivity(intent)
+            finish()
         }
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-//        binding.btnBack.setOnClickListener {
-//            onBackPressed()
-//        }
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
 
 
     }
@@ -63,6 +64,7 @@ class SecondScreenActivity : AppCompatActivity() {
             }
         }
     }
+
 
 
 
