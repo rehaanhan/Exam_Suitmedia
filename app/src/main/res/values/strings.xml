@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExamSuitmedia</string>
+    <string name="inputName">Nama</string>
+    <string name="check">CHECK</string>
+    <string name="next">NEXT</string>
+    <string name="palindrome">Palindrome</string>
+    <string name="second_scr">Second Screen</string>
+    <string name="prev_btn">Previous Button</string>
+    <string name="welcome">Welcome</string>
+    <string name="selectedUser">Selected User Name</string>
+    <string name="chooseUser">Choose a User</string>
+    <string name="email">email@email.com</string>
+    <string name="third_scr">Third Screen</string>
+</resources>
